@@ -1,0 +1,14 @@
+{
+  "name": "portofolio-website",
+  "version": "1.0.0",
+  "description": "Portofolio Website for Cipta Pratama",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "touch": "^3.1.1"
+  }
+}
