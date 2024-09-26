@@ -1,21 +1,21 @@
 #skills {
     text-align: center;
-    padding: 40px;
-    margin-top:20px;
+    padding: 1.5rem;
+    margin-top:1.25rem;
 }
 
 .skills-container-1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 90px;
+    gap: 5.75rem;
 }
 .skills-container-2 {
     display: flex;
-    margin-top: 100px;
+    margin-top: 6.25rem;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 90px;
+    gap: 5.75rem;
 }
 
 #skills h1 {
@@ -23,7 +23,7 @@
     position: relative;
     font-size: 3em;
     font-weight: bold;
-    margin-bottom: 150px;
+    margin-bottom: 8rem;
     color:white;
 }
 
@@ -38,27 +38,27 @@
     z-index: -1; /* Puts the red box behind the text */
 }
 .skill-item {
-    width: 125px;
-    height: 125px;
+    width: 7.25rem;
+    height: 7.25rem;
     background: linear-gradient(135deg, #333, #111); 
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.7); /* This makes the shadow always visible */
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.7); /* This makes the shadow always visible */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .skill-item img {
-    width: 80px;
-    height: 80px;
+    width: 4.25rem;
+    height: 4.25rem;
 }
 
 .skill-item::after {
     content: "";
     
-    bottom: 10px;  /* Adjust this based on your layout */
-    width: 60px;   /* Width of the shadow */
+    bottom: 0.625rem;  /* Adjust this based on your layout */
+    width: 3.75rem;   /* Width of the shadow */
     height: 5px;  /* Height of the shadow */
     margin-top: 5px;
     margin-bottom: -5px;
@@ -69,7 +69,7 @@
 }
 
 .skill-item p {
-    margin-top: 10px;
+    margin-top: 0.625rem;
     color: #fff;
     font-weight: bold;
 }

@@ -4,29 +4,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90vh;
+    max-height: 100vh;
     text-align: center;
     color: white;
 }
 
 .about-img {
-    width: 300px;  /* Adjust the size as needed */
-    height: 300px;
+    width: 20rem;  /* Adjust the size as needed */
+    height: 20rem;
     border-radius: 50%;  /* Makes the image circular */
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 
 #about p {
-    max-width: 800px; /* Adjust this as needed */
-    font-size: 1.2em;
+    max-width: 50rem; /* Adjust this as needed */
+    font-size: 1.2rem;
     color: #fff;
 }
 
 #about h1 {
     display: inline-block;
     position: relative;
-    font-size: 3em;
+    font-size: 3rem;
     font-weight: bold;
     color:white;
 }

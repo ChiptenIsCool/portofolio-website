@@ -1,14 +1,14 @@
 
 /* Contact section */
 #contact {
-    padding: 0px 40px 30px 40px;
+    padding: 0px 2.5rem 1.875rem 2.5rem;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 3rem;
 }
 
 #contact h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
 }
 
 #contact ul {
@@ -17,14 +17,14 @@
 }
 
 #contact ul li {
-    font-size: 1.1em;
-    margin: 10px 0;
+    font-size: 1.1rem;
+    margin: 0.625rem 0;
 }
 
 #contact h1 {
     display: inline-block;
     position: relative;
-    font-size: 2.4em;
+    font-size: 2.4rem;
     font-weight: normal;
     margin-bottom: 0;
 
@@ -45,10 +45,10 @@
 
 .contact-box {
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #2b2b2b; /* Adjust background color */
-    border-radius: 10px;
-    max-width: 600px;
+    border-radius: 0.625rem;
+    max-width: 30rem;
     margin: 0 auto; /* Center the box */
 }
 
@@ -63,14 +63,14 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 1rem;
     color: white;
 }
   
   .contact-box img.icon {
-    width: 39.6px;   /* Adjust the icon size */
-    height: 29.3px;  /* Adjust the icon size */
-    margin-right: 15px;
+    width: 2.1rem;   /* Adjust the icon size */
+    height: 1.7rem;  /* Adjust the icon size */
+    margin-right: 1rem;
   }
   
   .contact-box a {

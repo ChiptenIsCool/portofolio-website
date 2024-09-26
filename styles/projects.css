@@ -1,6 +1,6 @@
 /* Projects section */
 #projects {
-    padding: 50px;
+    padding: 3rem;
     background-color: transparent;
     text-align: center; 
 }
@@ -8,12 +8,12 @@
 .project {
     display: flex;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
     background-color: #2b2b2b; 
     background-color: rgba(31, 31, 31, 0.4); /* 0.8 is the opacity level */
     border: 2px solid #ffffff; /* White border with 2px width */
-    border-radius: 15px;
-    margin: 0% 15% 3% 20%;
+    border-radius: 1rem;
+    margin: 0% 15% 3% 15%;
     position: relative;
 }
 #projects h1 {
@@ -25,8 +25,8 @@
     color:white;
     
     z-index: 1; /* Set higher z-index for the text */
-    margin-bottom: 150px;
-    margin-top: 150px;
+    margin-bottom: 9rem;
+    margin-top: 9rem;
 }
 
 #projects h1::before {
@@ -41,15 +41,16 @@
 }
 
 .project-image img {
-    width: 1000px; /* Adjust as needed */
+    width: 50rem; /* Adjust as needed */
+    height: 100%;
     border-radius: 10px;
     z-index: 1;
 }
 
 .project-details {
-    max-width: 500px;
+    max-width: 31.25rem;
 
-    padding-left: 20px;
+    padding-left: 1.25rem;
     position: relative;
     text-align: left;
     left: -0px; /* Moves the description over the image */
@@ -59,18 +60,18 @@
 
 .project-details h2 {
     font-size: 2em;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     color: #f00;
 }
 .project-details p {
     color: #ccc;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 a.live-app-btn, a.learn-more-btn {
     display: inline-block;
-    padding: 10px 20px;
-    margin-right: 10px;
+    padding: 0.625rem 1.25rem;
+    margin-right: 0.625rem;
     color: white;
     background-color: #f00; /* Adjust colors */
     border-radius: 5px;
