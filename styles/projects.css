@@ -1,7 +1,7 @@
 /* Projects section */
 #projects {
     padding: 50px;
-    background-color: #1f1f1f; /* Background color */
+    background-color: transparent;
     text-align: center; 
 }
 
@@ -10,6 +10,8 @@
     align-items: center;
     padding: 20px;
     background-color: #2b2b2b; 
+    background-color: rgba(31, 31, 31, 0.4); /* 0.8 is the opacity level */
+    border: 2px solid #ffffff; /* White border with 2px width */
     border-radius: 15px;
     margin: 0% 15% 3% 20%;
     position: relative;
