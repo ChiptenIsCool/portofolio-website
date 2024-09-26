@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+
+.page{
+    position: relative;
+    background: white;
+    height: 300vh;
+
+}
+.logo{
+    font-size: 22px;
+}
+.hada{
+    color: wheat;
+    background: transparent;
+    position: sticky;
+    z-index: 2;
+    top: 0;
+    transition: 0.3s ease-in-out;
+    height: 80px;
+
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 40px;
+}
+
+.nav{
+    width: 40%;
+}
+.nav-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.nav-link a{
+    color: white;
+    text-decoration: none;
+    border-bottom:2px solid transparent ;
+    transition: .3s;
+
+}
+.nav-link a:hover{
+    border-bottom: 2px solid wheat;
+    transition: 0.3s;
+}
+.content{
+    background: url("../images/BoedimanProject.png");
+    background-size: cover;
+    height: 600px;
+    position: relative;
+    top:-80px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.title{
+    color: white;
+    font-size: 50px;
+    margin-left: 20%;
+
+}

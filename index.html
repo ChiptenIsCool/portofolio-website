@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/nav2.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
 
@@ -28,6 +29,7 @@
         </div>
         <div class="header-right">
             <h2>Pleased to meet you, I am</h2>
+            
             <div class="name">Cipta Pratama</div> <!-- Using a div instead of h1 -->
             <div class="intro">
                 <span>I am a </span>
@@ -64,26 +66,14 @@
     <div class="nav-right">
         <ul>
             <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 </nav>
 
-<!-- Sticky navbar (hidden initially, covers the relative navbar) -->
-<nav class="sticky-navbar">
-    <div class="nav-left">
-        <h1>Cipta Pratama</h1>
-    </div>
-    <div class="nav-right">
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-    
+
 
 
         <section id="about" style="margin-top: 0px;">
@@ -101,7 +91,7 @@
             
             
             <h1>My Skills</h1>
-            <div class="skills-container">
+            <div class="skills-container-1">
                 <div class="skill-item">
                     <img src="/images/tech-logo/icons8-python-480.png" alt="Python">
                 </div>
@@ -125,7 +115,7 @@
                 </div>
                 <!-- Add more skill items here -->
             </div>
-            <div class="skills-container">
+            <div class="skills-container-2">
                 <div class="skill-item">
                     <img src="images/tech-logo/icons8-nodejs-240.png" alt="NodeJS">
                 </div>
@@ -226,7 +216,7 @@
               </li>
               <li>
                 <img src="images/LinkedIn-Logos/icons8-linkedin-240.png" alt="LinkedIn" style="height: 39.6px;" class="icon">
-                <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/your-profile" target="_blank">linkedin.com/in/cipta-pratama-766021256/</a>
+                <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/cipta-pratama-766021256" target="_blank">linkedin.com/in/cipta-pratama-766021256/</a>
               </li>
             </ul>
           </div>
@@ -290,9 +280,12 @@
 
 
     //Navbar
+    /*
     window.onscroll = function() {
     toggleStickyNavbar();
 };
+
+
 
 var stickyNavbar = document.querySelector(".sticky-navbar");
 var header = document.querySelector("header");
@@ -305,5 +298,16 @@ function toggleStickyNavbar() {
         stickyNavbar.style.display = "none";  // Hide sticky navbar
     }
 }
+*/
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('nav');
+
+    if (window.scrollY > window.innerHeight) {
+        
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
 </script>
 </html>

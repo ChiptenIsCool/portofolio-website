@@ -1,49 +1,31 @@
-/* Navigation styles */
-/* Base styles for navbar */
-/* Base styles for navbar */
 nav {
-    position: relative;  /* Initially relative to content-wrapper */
+    position: fixed;
     width: 100%;
-    background-color: #333;
-    padding: 10px 20px;
+    top: 0;
     z-index: 1000;
+    background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 120px;
     transition: all 0.3s ease;
-    background-color: #333; /* Your main background color */
-    padding: 20px;
+    
+}
+
+nav.scrolled {
+    background-color: rgba(43, 43, 43, 0.95); /* Background after scrolling */
+    height: 80px;
     box-shadow: 
         0 -10px 15px rgba(0, 0, 0, 0.5), /* Top shadow */
         0 10px 15px rgba(0, 0, 0, 0.5);  /* Bottom shadow */
 }
-
-
-
-
-/* First (relative) navbar */
-.relative-navbar {
-    position: relative;
-    width: 100%;
-    padding: 0px 20px;
-}
-
-/* Sticky navbar (initially hidden) */
-.sticky-navbar {
-    display: none; /* Hidden until scrolled */
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 0px 20px;
-    z-index: 1000;
-
-}
-
 .nav-left {
-    padding-left: 40px; /* Add padding on the left to avoid cutting off the name */
+    padding-left: 0px; /* Add padding on the left to avoid cutting off the name */
+    margin-left: 150px;
 }
 .nav-right {
-    padding-right: 100px; /* Add padding on the left to avoid cutting off the name */
+    padding-right: 0px; /* Add padding on the left to avoid cutting off the name */
+    margin-right: 150px;
 }
 
 
@@ -56,7 +38,7 @@ nav {
 }
 
 .nav-right ul li {
-    margin-left: 40px;
+    margin-left: 80px;
     white-space: nowrap; /* Prevent text wrapping */
 }
 

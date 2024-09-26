@@ -4,11 +4,18 @@
     margin-top:20px;
 }
 
-.skills-container {
+.skills-container-1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 90px;
+}
+.skills-container-2 {
+    display: flex;
+    margin-top: 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 90px;
 }
 
 #skills h1 {
