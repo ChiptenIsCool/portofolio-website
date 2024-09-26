@@ -1,0 +1,40 @@
+
+/* Contact section */
+#contact {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+#contact h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 3em;
+    font-weight: bold;
+    color:white;
+}
+
+#contact h1::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 0.25em;
+    background-color: #ff3d3d; /* Red color */
+    bottom: 0.25em; /* Moves the line slightly below the text */
+    left: 1em;
+    z-index: -1; /* Puts the red box behind the text */
+}

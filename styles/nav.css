@@ -1,0 +1,88 @@
+/* Navigation styles */
+/* Base styles for navbar */
+/* Base styles for navbar */
+nav {
+    position: relative;  /* Initially relative to content-wrapper */
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+    background-color: #333; /* Your main background color */
+    padding: 20px;
+    box-shadow: 
+        0 -10px 15px rgba(0, 0, 0, 0.5), /* Top shadow */
+        0 10px 15px rgba(0, 0, 0, 0.5);  /* Bottom shadow */
+}
+
+/* First (relative) navbar */
+.relative-navbar {
+    position: relative;
+    width: 100%;
+    padding: 0px 20px;
+}
+
+/* Sticky navbar (initially hidden) */
+.sticky-navbar {
+    display: none; /* Hidden until scrolled */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0px 20px;
+    z-index: 1000;
+
+}
+
+.nav-left {
+    padding-left: 40px; /* Add padding on the left to avoid cutting off the name */
+}
+.nav-right {
+    padding-right: 100px; /* Add padding on the left to avoid cutting off the name */
+}
+
+
+/* Navigation items */
+.nav-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav-right ul li {
+    margin-left: 40px;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.nav-right ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.nav-right ul li a:hover {
+    color: #ddd;
+}
+
+.nav-left h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 15px 0px 15px 0px;
+    color:white;
+}
+
+.nav-left h1::before {
+    content: "";
+    position: absolute;
+    width: 85%;
+    height: 0.25em;
+    background-color: #ff3d3d; /* Red color */
+    bottom: 0.25em; /* Moves the line slightly below the text */
+    left: 1em;
+    z-index: -1; /* Puts the red box behind the text */
+}
