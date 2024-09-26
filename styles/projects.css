@@ -8,7 +8,6 @@
 .project {
     display: flex;
     align-items: center;
-    margin-bottom: 40px;
     padding: 20px;
     background-color: #2b2b2b; 
     border-radius: 15px;
@@ -22,8 +21,10 @@
     font-size: 3em;
     font-weight: bold;
     color:white;
-    z-index: 1; /* Set higher z-index for the text */
     
+    z-index: 1; /* Set higher z-index for the text */
+    margin-bottom: 150px;
+    margin-top: 150px;
 }
 
 #projects h1::before {
