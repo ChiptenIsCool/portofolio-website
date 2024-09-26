@@ -61,7 +61,7 @@
 
 .contact-box li {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
     margin-bottom: 15px;
     color: white;
