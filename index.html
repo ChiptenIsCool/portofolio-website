@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/nav2.css">
     <link rel="stylesheet" href="styles/skills.css">
     <link rel="stylesheet" href="styles/projects.css">
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <div style="overflow-x: hidden; position: relative;">
 
 
         <!-- First (relative) navbar -->
@@ -72,7 +76,7 @@
 
 
 
-        <section id="about" style="margin-top: 0px;">
+        <section id="about">
             
             
             <h1>About Me</h1>
@@ -148,8 +152,11 @@
                 <div class="project-details">
                     <h2>Project 1 Name</h2>
                     <p>Description of Project 1. Tech stack used and what the project is about.</p>
-                    <a href="#" class="live-app-btn">Live App</a>
-                    <a href="#" class="learn-more-btn">Learn More</a>
+                    <p>Description of Project 2. Tech stack used and what the project is about.</p>
+                    <div class="button-container">
+                        <a href="#" class="live-app-btn">Live App</a>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                      </div>
                 </div>
             </div>
         
@@ -159,8 +166,11 @@
                 <div class="project-details">
                     <h2>Project 2 Name</h2>
                     <p>Description of Project 2. Tech stack used and what the project is about.</p>
-                    <a href="#" class="live-app-btn">Live App</a>
-                    <a href="#" class="learn-more-btn">Learn More</a>
+                    <p>Description of Project 2. Tech stack used and what the project is about.</p>
+                    <div class="button-container">
+                        <a href="#" class="live-app-btn">Live App</a>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                      </div>
                 </div>
                 <div class="project-image">
                     <img src="images/BoedimanProject.png" alt="Project 2 Screenshot">
@@ -175,8 +185,10 @@
                 <div class="project-details">
                     <h2>Project 3 Name</h2>
                     <p>Description of Project 3. Tech stack used and what the project is about.</p>
-                    <a href="#" class="live-app-btn">Live App</a>
-                    <a href="#" class="learn-more-btn">Learn More</a>
+                    <div class="button-container">
+                        <a href="#" class="live-app-btn">Live App</a>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                      </div>
                 </div>
             </div>
         
@@ -186,8 +198,10 @@
                 <div class="project-details">
                     <h2>Project 4 Name</h2>
                     <p>Description of Project 4. Tech stack used and what the project is about.</p>
-                    <a href="#" class="live-app-btn">Live App</a>
-                    <a href="#" class="learn-more-btn">Learn More</a>
+                    <div class="button-container">
+                        <a href="#" class="live-app-btn">Live App</a>
+                        <a href="#" class="learn-more-btn">Learn More</a>
+                      </div>
                     
                 </div>
                 <div class="project-image">
@@ -211,8 +225,8 @@
                 <strong>Gmail: </strong> <a href="mailto:ciptaautomatic401@gmail.com"> ciptaautomatic401@gmail.com</a>
               </li>
               <li>
-                <img src="images/LinkedIn-Logos/icons8-linkedin-240.png" alt="LinkedIn" style="height: 2.1rem;" class="icon">
-                <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/cipta-pratama-766021256" target="_blank">linkedin.com/in/cipta-pratama-766021256/</a>
+                <img src="images/LinkedIn-Logos/icons8-linkedin-240.png" alt="LinkedIn" class="icon">
+                <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/cipta-pratama-766021256" target="_blank">LinkedIn</a>
               </li>
             </ul>
           </div>
@@ -221,7 +235,14 @@
 
 
 
-
+          <div class="page-bottom-nav">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
 
 
     <footer>
@@ -229,7 +250,7 @@
     </footer>
 
 
-
+</div>
 </body>
 <script>
     const words = ["Data Analyst.", "Software Engineer.", "Full Stack Developer."];
@@ -242,6 +263,7 @@
     const delayBetweenWords = 1500; // 1.5 seconds between words
 
     const dynamicTextElement = document.getElementById("dynamic-text");
+    console.log(window.visualViewport.scale)
 
     function type() {
         if (!isDeleting) {

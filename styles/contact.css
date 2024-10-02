@@ -6,10 +6,6 @@
     margin-bottom: 3rem;
 }
 
-#contact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.25rem;
-}
 
 #contact ul {
     list-style: none;
@@ -85,4 +81,54 @@
   
   .contact-box a:hover {
     text-decoration: underline;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    #contact{
+        padding: 1rem 2.5rem 0.4rem 1.6rem;
+    }
+
+
+  
+    #contact h1 {
+      font-size: 1.75rem; /* Adjust the heading size */
+      margin-top: 0;
+    }
+  
+    .contact-box {
+      padding: 1rem; /* Reduce padding for mobile */
+      max-width: 80%; /* Make it fill the width on smaller screens */
+      margin: 0 auto; /* Center the contact box horizontally */
+      box-sizing: border-box; /* Ensure padding doesn't exceed width */
+      text-align: left; /* Align text to the left */
+      
+    }
+
+    .contact-box ul{
+        margin-top: 0;
+    }
+
+    .contact-box ul li {
+        display: flex;
+        align-items: center; /* Align the icon and text vertically */
+        margin-bottom: 0.75rem; /* Space between items */
+    }
+
+      /* Hide the labels on mobile */
+      .contact-box ul li strong {
+        display: none;
+      }
+  
+    .contact-box img.icon {
+      width: 1.5rem;  /* Adjust icon size for mobile */
+      height: 1.5rem; /* Adjust icon height */
+      margin-right: 1rem; /* Adjust spacing between icon and text */
+    }
+  
+    .contact-box a {
+      font-size: 0.9rem; /* Reduce the link font size */
+      color: #ff3d3d; /* Ensure link color is clear */
+      white-space: nowrap;
+    }
   }

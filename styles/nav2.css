@@ -63,20 +63,47 @@ nav.scrolled {
     margin: 0.8rem 0 0.8rem 0;
     color:white;
 }
-
-@media only screen and (max-width: 768px) {
-    .nav-left h1  {
-        letter-spacing: -0.5px;
-      font-size: 1.5rem; /* Adjust this value to your preference */
+@media only screen and (min-width: 769px) {
+    .page-bottom-nav {
+        display: none; /* Hide the bottom navigation on desktop */
     }
-  }
-.nav-left h1::before {
-    content: "";
-    position: absolute;
-    width: 85%;
-    height: 0.25em;
-    background-color: #ff3d3d; /* Red color */
-    bottom: 0.25em; /* Moves the line slightly below the text */
-    left: 1em;
-    z-index: -1; /* Puts the red box behind the text */
+}
+/* Bottom of page navigation styles for mobile */
+@media only screen and (max-width: 768px) {
+    nav{
+        display: none;
+    }
+    /* Style the bottom nav before the footer */
+    .page-bottom-nav {
+        width: 100%;
+        background-color: rgba(43, 43, 43, 0.95);
+        padding: 1.5rem 0;
+        margin-bottom: 2rem; /* Add margin before the footer */
+        text-align: center;
+    }
+
+    .page-bottom-nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;  /* Make the links display in a column */
+        align-items: center;     /* Center the links horizontally */
+        gap: 1.5rem;             /* Space between the links */
+        padding: 0;
+        margin: 0;
+    }
+
+    .page-bottom-nav ul li {
+        display: block; /* Each item takes full width in the column */
+    }
+
+    .page-bottom-nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .page-bottom-nav ul li a:hover {
+        color: #ff3d3d; /* Add hover effect */
+    }
 }

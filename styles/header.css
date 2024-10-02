@@ -1,0 +1,148 @@
+/* Header section */
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: white;
+    height: 100vh;
+    position: relative;
+    width: 100vw;  /* Ensure header takes up full width */
+    z-index: 1;
+    background-color: #1f1f1f;
+    flex-wrap: wrap; /* For better responsiveness */
+}
+
+/* Left section (profile picture) */
+/* Left section (profile picture) */
+.header-left img {
+    width: 22rem;  /* Increased width */
+    height: 22rem; /* Increased height */
+    border-radius: 50%; /* Circular profile picture */
+}
+
+/* Right section (introduction) */
+.header-right {
+    text-align: center;
+    padding-left: 3.75rem; /* Space between image and text */
+}
+
+/* Name styling */
+.header-right .name {
+    font-size: 4em; /* Larger font for better hierarchy */
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+}
+
+
+/* Greeting text */
+.header-right h2 {
+    margin: 0 0 0.63rem 0;
+    font-size: 1.5em;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Role description (I am a...) */
+.header-right p {
+    margin: 0 0 1.25rem 0;
+    font-size: 1.2em;
+    color: #aaa;
+    line-height: 1.6;
+}
+
+
+/* Social Icons and Buttons */
+.header-right .social-icons {
+    display: flex;
+    align-items: center; /* Vertically centers the icons and button */
+    justify-content: center;
+}
+
+/* CV Button */
+.cv-button {
+    background-color: #012750;
+    color: white;
+    padding: 0.625rem 1.25rem; /* Balanced padding for a better button size */
+    border: none;
+    border-radius: 0.625rem; /* Smooth rounded corners */
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center; /* Vertically centers the text inside the button */
+    justify-content: center;
+    height: 3rem; /* Ensure button matches the height of the icons */
+    transition: background-color 0.3s ease;
+}
+
+.cv-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+@media only screen and (max-height: 700px)and (max-width: 768px) {
+
+    header{
+        margin-top: 10rem;
+    }
+
+
+}
+
+/* Responsive styles for Mobile Devices (below 768px) */
+@media only screen and (max-width: 768px) {
+    /* Stack and center everything on mobile */
+    header {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center vertically */
+        align-items: center; /* Center horizontally */
+
+        
+    }
+
+    /* Profile picture adjustments for mobile */
+    .header-left img {
+        width: 12rem; /* Reduce image size for mobile */
+        height: 12rem;
+        margin-bottom: 1.5rem; /* Add spacing below image */
+    }
+
+    /* Remove padding and center content on mobile */
+    .header-right {
+        padding-left: 0;
+        text-align: center; /* Ensure everything is centered */
+    }
+
+    /* Adjust font sizes for mobile */
+    .header-right .name {
+        font-size: 2.5rem; /* Smaller name font size */
+        margin-bottom: 1rem; /* Add spacing below name */
+    }
+
+    .header-right h2 {
+        font-size: 1.2rem; /* Smaller font size for greeting */
+        margin-bottom: 1rem;
+    }
+
+    .header-right p {
+        font-size: 1rem; /* Smaller font for role */
+        margin-bottom: 1.5rem;
+    }
+
+    /* Stack social icons and buttons vertically */
+    .social-icons {
+        flex-direction: column; /* Stack icons vertically */
+        gap: 1.5rem; /* Space between icons and button */
+    }
+    .icon {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0;
+        vertical-align: middle; /* Ensures icons are vertically aligned */
+    }
+
+    /* Adjust the button to be full-width on mobile */
+    .cv-button {
+        width: 100%; /* Full width for mobile */
+    }
+}
+

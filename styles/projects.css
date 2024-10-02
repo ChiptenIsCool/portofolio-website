@@ -19,11 +19,9 @@
 #projects h1 {
     display: inline-block;
     position: relative;
-    
     font-size: 3em;
     font-weight: bold;
     color:white;
-    
     z-index: 1; /* Set higher z-index for the text */
     margin-bottom: 9rem;
     margin-top: 9rem;
@@ -82,3 +80,80 @@ a.live-app-btn, a.learn-more-btn {
 a.live-app-btn:hover, a.learn-more-btn:hover {
     background-color: #ff5e5e;
 }
+
+@media only screen and (max-width: 768px) {
+    .project {
+      flex-direction: column; /* Stack the project items vertically */
+      align-items: center;
+      margin: 0rem 5% 2rem 5%; /* Adjust margin for better spacing */
+      padding: 1rem; /* Add padding to give more space inside the container */
+      box-sizing: border-box; /* Ensure padding doesn't affect width */
+      
+    }
+    .project-image {
+        order: -1; /* Set the order of the image to be first */
+        width: 100%; /* Make the image take full width */
+      }
+    
+  
+    .project-image img {
+      width: 100%; /* Make the image take full width */
+      height: auto; /* Maintain aspect ratio */
+    }
+  
+    .project-details {
+      max-width: 100%;
+      padding-left: 0;
+      text-align: center; /* Center the text for mobile */
+
+      order: 1; /* Details come after the image */
+    }
+
+    .project-details p {
+        color: #ccc;
+        font-size: 0.75rem;
+    }
+    #projects h1 {
+        display: inline-block;
+        position: relative;
+        font-size: 2.5em;
+        font-weight: bold;
+        color:white;
+        z-index: 1; /* Set higher z-index for the text */
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    .project-details h2 {
+        font-size: 1.6rem; /* Adjust the font size to a smaller value */
+        margin-bottom: 0rem; 
+        margin-top: 0rem; /*remove margin top from god knows where*/
+    }
+    .project-details .button-container {
+        display: flex;
+        justify-content: space-between; /* Space between buttons */
+        align-items: center; /* Vertically align buttons */
+        width: 100%; /* Make sure the container takes full width */
+        padding: 0rem 0; /* Add some padding for spacing */
+      }
+  
+    a.live-app-btn, a.learn-more-btn {
+        flex: 1; /* Allow buttons to grow evenly */
+        margin: 0 0.5rem; /* Add space between the buttons */
+        text-align: center;
+
+        font-size: 1rem; /* Reduce font size for better balance */
+        padding: 0.5rem 0;
+        max-width: 45%; /* Prevent the buttons from taking too much space */
+        box-sizing: border-box; /* Ensure padding doesn't affect the button size */
+    }
+    .project-details a {
+        display: flex;
+        justify-content: center; /* Center the button text */
+        align-items: center;
+        font-size: 0.8rem;
+      }
+
+
+    
+  }

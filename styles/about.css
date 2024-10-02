@@ -1,13 +1,23 @@
+
+
 /* About section */
 #about {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-height: 100vh;
     text-align: center;
     color: white;
+    
+    width: 100%; /* Ensure full width */
+    max-width: 1200px; /* Set a maximum width to avoid it becoming too wide on larger screens */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 2rem; /* Add padding to give space inside */
+    box-sizing: border-box; /* Ensure padding doesn’t affect width */
 }
+
+
+
 
 .about-img {
     width: 20rem;  /* Adjust the size as needed */
@@ -20,7 +30,9 @@
 #about p {
     max-width: 50rem; /* Adjust this as needed */
     font-size: 1.2rem;
-    color: #fff;
+    color: #fff;    
+    padding: 0 1rem; /* Add padding to prevent the text from touching the edges */
+
 }
 
 #about h1 {
@@ -29,6 +41,7 @@
     font-size: 3rem;
     font-weight: bold;
     color:white;
+    margin-bottom: 1.5rem; /* Add some spacing below the heading */
 }
 
 #about h1::before {
@@ -40,4 +53,32 @@
     bottom: 0.25em; /* Moves the line slightly below the text */
     left: 1em;
     z-index: -1; /* Puts the red box behind the text */
+}
+
+/* Mobile-specific adjustments */
+@media only screen and (max-width: 768px) {
+    #about {
+        padding: 2rem 1rem; /* Add some padding for mobile */
+    }
+
+    .about-img {
+        width: 10rem; /* Smaller image size for mobile */
+        height: 10rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #about h1 {
+        font-size: 2rem; /* Reduce heading size for mobile */
+    }
+
+    #about h1::before {
+        width: 70%; /* Reduce the width of the underline */
+        left: 0.5em; /* Adjust the positioning of the underline */
+    }
+
+    #about p {
+        font-size: 1rem; /* Reduce font size for mobile */
+        max-width: 90%; /* Make sure the text fits within the mobile screen */
+        margin-bottom: 1rem; /* Add some spacing between paragraphs */
+    }
 }

@@ -78,3 +78,35 @@
     transform: scale(1.1);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
 }
+
+@media only screen and (max-width: 768px) {
+    .skill-item {
+        width: 3.5rem; /* Smaller size for mobile */
+        height: 3.5rem; /* Smaller size for mobile */
+    }
+
+    #skills h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 4rem;
+        color:white;
+    }
+
+    .skill-item img {
+        width: 2rem; /* Smaller icon size for mobile */
+        height: 2rem; /* Smaller icon size for mobile */
+    }
+
+    .skill-item::after {
+        width: 1.5rem; /* Adjusted shadow width for mobile */
+    }
+
+    /* Adjusting gap and layout for skills container */
+    .skills-container-1 {
+        gap: 2rem;
+    }
+    .skills-container-2 {
+        margin-top: 5rem;
+        gap: 2rem;
+    }
+}
