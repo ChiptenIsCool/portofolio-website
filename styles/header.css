@@ -6,20 +6,34 @@ header {
     
     color: white;
     height: 100vh;
+
     position: relative;
-    width: 100vw;  /* Ensure header takes up full width */
+    width: 100%;  /* Ensure header takes up full width */
     z-index: 1;
     background-color: #1f1f1f;
-    flex-wrap: wrap; /* For better responsiveness */
+    
 }
+
 
 /* Left section (profile picture) */
 /* Left section (profile picture) */
-.header-left img {
-    width: 22rem;  /* Increased width */
-    height: 22rem; /* Increased height */
-    border-radius: 50%; /* Circular profile picture */
+
+.header-left {
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
 }
+
+header img {
+    border-radius: 50%; /* Circular profile picture */
+    width: 80%;  /* Adjusts to 80% of the container */
+    height: 80%; /* Adjusts to 80% of the container */
+    object-fit: cover; /* Keeps the image's aspect ratio intact */
+}
+
+
 
 /* Right section (introduction) */
 .header-right {
@@ -82,7 +96,7 @@ header {
 @media only screen and (max-height: 700px)and (max-width: 768px) {
 
     header{
-        margin-top: 10rem;
+        
     }
 
 
@@ -92,18 +106,26 @@ header {
 @media only screen and (max-width: 768px) {
     /* Stack and center everything on mobile */
     header {
-        flex-direction: column; /* Stack items vertically */
+        flex-direction: column ; /* Stack items vertically */
         justify-content: center; /* Center vertically */
         align-items: center; /* Center horizontally */
-
-        
+        min-height: 100vh;
+        height: auto;     
     }
 
-    /* Profile picture adjustments for mobile */
-    .header-left img {
-        width: 12rem; /* Reduce image size for mobile */
+
+    .header-left {
+        width: 12rem;
         height: 12rem;
-        margin-bottom: 1.5rem; /* Add spacing below image */
+        margin-bottom: 2rem;
+
+    }
+    
+    header .pp {
+        height: 12rem;
+        width: 12rem;
+
+        
     }
 
     /* Remove padding and center content on mobile */
